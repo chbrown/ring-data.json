@@ -4,7 +4,7 @@
 (defn- json-request
   "Sync/async helper used by wrap-json-request"
   [request options]
-  (if (some->> (get-in request [:headers "content-type"]) (re-find #"^application/json"))
+  (if (re-find #"^application/json" (get-in request [:headers "content-type"] ""))
     (update-in request [:body] #(apply json/read-str (slurp %) options))
     request))
 
