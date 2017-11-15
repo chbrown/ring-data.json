@@ -6,7 +6,7 @@
   :deploy-repositories [["releases" :clojars]]
   :dependencies [[org.clojure/clojure "1.5.1"]
                  [org.clojure/data.json "0.2.6"]]
-  :plugins [[lein-cloverage "1.0.10"]
-            [lein-codox "0.10.3"]]
-  :codox {:source-paths ["src"]
-          :source-uri "https://github.com/chbrown/ring-data.json/blob/{version}/{filepath}#L{line}"})
+  :profiles {:dev {:plugins [[lein-codox "0.10.3"]]
+                   :codox {:source-paths ["src"]
+                           :source-uri "https://github.com/chbrown/ring-data.json/blob/{version}/{filepath}#L{line}"}}
+             :test {:plugins [[lein-cloverage "1.0.10"]]}})
