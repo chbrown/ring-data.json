@@ -1,4 +1,4 @@
-(defproject chbrown/ring-data.json "0.1.0-SNAPSHOT"
+(defproject chbrown/ring-data.json "0.1.0"
   :description "Ring middleware for handling JSON with data.json"
   :url "https://github.com/chbrown/ring-data.json"
   :license {:name "Eclipse Public License"
