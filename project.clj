@@ -3,6 +3,7 @@
   :url "https://github.com/chbrown/ring-data.json"
   :license {:name "Eclipse Public License"
             :url "https://www.eclipse.org/legal/epl-v10.html"}
+  :deploy-repositories [["releases" :clojars]]
   :dependencies [[org.clojure/clojure "1.5.1"]
                  [org.clojure/data.json "0.2.6"]]
   :plugins [[lein-cloverage "1.0.10"]
